@@ -1,293 +1,50 @@
 <!DOCTYPE html>
 <html>
+    <head>
+       <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>
+            <%=title%>
+        </title>
+       <%include partials/head.html%>
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>
-        <%=title%>
-    </title>
-    <%include partials/head.html%>
+    <style>
+            body {
+                font-family: 'Spicy Rice', cursive;
+            }
+            </style>
+    
 
-    <link rel="stylesheet" href="/css/w3.css">
-</head>
+    <body>
+      
+        <% include partials/navigation.html %>
 
-<style>
-    @font-face {
-        font-family: 'PT Sans';
-        src: url('fonts/pt_sans.ttf');
-    }
-
-    body {
-        font-family: 'PT Sans', sans-serif;
-        background: white;
-    }
-
-    .imageWelcome {
-        height: 300px;
-        margin: 8px;
-    }
-
-    .imgFeed {
-        height: 75px;
-        margin: auto;
-    }
-
-    .imgInfo {
-        background-size: cover;
-        height: 250px;
-        width: 100%;
-    }
-
-    hr {
-        border-color: lightgray;
-        background-color: lightgray;
-        color: lightgray;
-    }
-
-    html {
-        scroll-behavior: smooth;
-    }
-
-</style>
-
-
-<body>
-
-    <% include partials/navigation.html %>
-
-    <div class="container" style="margin-top: 24px;">
-        <header class="row">
-            <div class="col-lg-12 text-center">
-                <img class="imageWelcome animated flipInY" src="/img/logo_vsi.png" class="animated flipInY" alt="">
+        <div class="container">
+               <header class="row">
+                   <div class="col-lg-12 text-center">
+                       <img src="/img/logoVSI2.png" class="animated flipInY" alt="">
+                   </div>
+               </header>
             </div>
-        </header>
-    </div>
-
-    <div class="w3-container w3-padding" style="margin-top: 24px">
-        <div class="w3-cell-row">
-            <div class="w3-container w3-cell w3-center">
-                <a href="#cardMaquinado"><img class="imgFeed" src="/img/maquinado2.png"></a>
-            </div>
-            <div class="w3-container w3-cell w3-center">
-                <a href="#cardEletronica"><img class="imgFeed" src="/img/electronica_base.png"></a>
-            </div>
-            <div class="w3-container w3-cell w3-center">
-                <a href="#cardSenaletica"><img class="imgFeed" src="/img/senaletica2.png"></a>
-            </div>
-            <div class="w3-container w3-cell w3-center">
-                <a href="#cardSoldadura"><img class="imgFeed" src="/img/soldadura2.png"></a>
-            </div>
-            <div class="w3-container w3-cell w3-center">
-                <a href="#cardIndustria"><img class="imgFeed" src="/img/industria.png"></a>
-            </div>
-            <div class="w3-container w3-cell w3-center">
-                <a href="#cardAutomatizacion"><img class="imgFeed" src="/img/AUTOMATIZACION.png"></a>
-            </div>
-            <div class="w3-container w3-cell w3-center">
-                <a href="#cardEletromecanica"><img class="imgFeed" src="/img/ELECTROMECANICA.png"></a>
-            </div>
-        </div>
-    </div>
-
-    <hr style="visibility: hidden">
-
-    <div id="cardMaquinado" class="w3-container w3-card-4" style="margin: auto; width: 76%;">
-        <h1 class="w3-center" style="margin-top: 24px">Maquinado</h1>
-
-        <hr>
-
-        <div class="w3-cell-row" style="margin-top: 24px">
-            <div class="w3-container w3-cell w3-center">
-                <img class="imgInfo" src="/img/maquinado_1.png">
-            </div>
-            <div class="w3-container w3-cell w3-center">
-                <img class="imgInfo" src="/img/maquinado_2.png">
-            </div>
-            <div class="w3-container w3-cell w3-center">
-                <img class="imgInfo" src="/img/maquinado_3.png">
-            </div>
-        </div>
-
-        <div class="w3-cell-row" style="margin-top: 24px">
-            <div class="w3-container w3-cell w3-center">
-                <img class="imgInfo" src="/img/maquinado_4.png">
-            </div>
-            <div class="w3-container w3-cell w3-center">
-                <img class="imgInfo" src="/img/maquinado_5.png">
-            </div>
-            <div class="w3-container w3-cell w3-center">
-                <img class="imgInfo" src="/img/maquinado_6.png">
-            </div>
-        </div>
-    </div>
-
-    <hr style="visibility: hidden">
-
-    <div id="cardEletronica" class="w3-container w3-card-4" style="margin: auto; width: 76%;">
-        <h1 class="w3-center" style="margin-top: 24px">Electrónica</h1>
-
-        <hr>
-
-        <div class="w3-cell-row" style="margin-top: 24px">
-            <div class="w3-container w3-cell w3-center">
-                <img class="imgInfo" src="/img/electronica_1.jpg">
-            </div>
-            <div class="w3-container w3-cell w3-center">
-                <img class="imgInfo" src="/img/electronica_2.png">
-            </div>
-            <div class="w3-container w3-cell w3-center">
-                <img class="imgInfo" src="/img/electronica_3.png">
-            </div>
-        </div>
-
-        <div class="w3-cell-row" style="margin-top: 24px">
-            <div class="w3-container w3-cell w3-center">
-                <img class="imgInfo" src="/img/electronica_4.jpg">
-            </div>
-            <div class="w3-container w3-cell w3-center">
-                <img class="imgInfo" src="/img/electronica_5.png">
-            </div>
-            <div class="w3-container w3-cell w3-center">
-                <img class="imgInfo" src="/img/maquinado_6.png">
-            </div>
-        </div>
-
-        <div class="w3-cell-row" style="margin-top: 24px">
-            <div class="w3-container w3-cell w3-center">
-                <img class="imgInfo" src="/img/electronica_7.png">
-            </div>
-            <div class="w3-container w3-cell w3-center">
-                <img class="imgInfo" src="/img/electronica_8.jpg">
-            </div>
-            <div class="w3-container w3-cell w3-center">
-                <img class="imgInfo" src="/img/electronica_8.png">
-            </div>
-        </div>
-
-        <div class="w3-cell-row" style="margin-top: 24px">
-            <div class="w3-container w3-cell w3-center">
-                <img class="imgInfo" src="/img/electronica_10.png">
-            </div>
-            <div class="w3-container w3-cell w3-center">
-                <img class="imgInfo" src="/img/electronica_11.jpg">
-            </div>
-            <div class="w3-container w3-cell w3-center">
-                <img class="imgInfo" src="/img/electronica_12.jpg">
-            </div>
-        </div>
-    </div>
-
-    <hr style="visibility: hidden">
-
-    <div id="cardSenaletica" class="w3-container w3-card-4" style="margin: auto; width: 76%;">
-        <h1 class="w3-center" style="margin-top: 24px">Señalética</h1>
-
-        <hr>
-
-        <div class="w3-cell-row" style="margin-top: 24px">
-            <div class="w3-container w3-cell w3-center">
-                <img class="imgInfo" style="height: 700px" src="/img/senaletica_1.png">
-            </div>
-        </div>
-    </div>
-
-    <hr style="visibility: hidden">
-
-    <div id="cardSoldadura" class="w3-container w3-card-4" style="margin: auto; width: 76%;">
-        <h1 class="w3-center" style="margin-top: 24px">Soldadura</h1>
-
-        <hr>
-
-        <div class="w3-cell-row" style="margin-top: 24px">
-            <div class="w3-container w3-cell w3-center">
-                <img class="imgInfo" style="height: 350px" src="/img/soldadura_1.png">
-            </div>
-            <div class="w3-container w3-cell w3-center">
-                <img class="imgInfo" style="height: 350px" src="/img/soldadura_2.png">
-            </div>
-        </div>
-    </div>
-
-    <hr style="visibility: hidden">
-
-    <div id="cardIndustria" class="w3-container w3-card-4" style="margin: auto; width: 76%;">
-        <h1 class="w3-center" style="margin-top: 24px">Industria</h1>
-
-        <hr>
-
-        <div class="w3-cell-row" style="margin-top: 24px">
-            <div class="w3-container w3-cell w3-center">
-                <img class="imgInfo" src="/img/industria_1.png">
-            </div>
-            <div class="w3-container w3-cell w3-center">
-                <img class="imgInfo" src="/img/industria_2.png">
-            </div>
-            <div class="w3-container w3-cell w3-center">
-                <img class="imgInfo" src="/img/industria_3.png">
-            </div>
-        </div>
-
-        <div class="w3-cell-row" style="margin-top: 24px">
-            <div class="w3-container w3-cell w3-center">
-                <img class="imgInfo" src="/img/industria_4.png">
-            </div>
-            <div class="w3-container w3-cell w3-center">
-                <img class="imgInfo" src="/img/industria_5.png">
-            </div>
-            <div class="w3-container w3-cell w3-center">
-                <img class="imgInfo" src="/img/industria_6.png">
-            </div>
-        </div>
-    </div>
-
-    <hr style="visibility: hidden">
-
-    <div id="cardAutomatizacion" class="w3-container w3-card-4" style="margin: auto; width: 76%;">
-        <h1 class="w3-center" style="margin-top: 24px">Automatización</h1>
-
-        <hr>
-
-        <div class="w3-cell-row" style="margin-top: 24px">
-            <div class="w3-container w3-cell w3-center">
-                <img class="imgInfo" style="height: 700px" src="/img/automatizacion_1.png">
-            </div>
-        </div>
-    </div>
-
-    <hr style="visibility: hidden">
-
-    <div id="cardEletromecanica" class="w3-container w3-card-4" style="margin: auto; width: 76%;">
-        <h1 class="w3-center" style="margin-top: 24px">Electromecánica</h1>
-
-        <hr>
-
-        <div class="w3-cell-row" style="margin-top: 24px">
-            <div class="w3-container w3-cell w3-center">
-                <img class="imgInfo" style="height: 500px" src="/img/electromecanica_1.png">
-            </div>
-        </div>
-    </div>
-
-    <!--SECTION ONE-->
-    <div class="container-fluid" id="about" style="margin-top: 40px">
-        <div class="row bg-dark text-white p-5 text-center">
-
-            <!--<div class="col-sm-6">
+            <!--SECTION ONE-->
+            <div class="container-fluid" id="about">
+                <div class="row bg-dark text-white p-5 text-center">
+                
+                    <div class="col-sm-6">
                 <i class="fab fa-youtube fa-5x"></i>
 
-            </div>-->
-            <div class="col-sm-12">
-                <h3>Pagina en mantenimiento</h3>
-                <p>serviciovupe@gmail.com</p>
             </div>
-        </div>
-    </div>
-    <% include partials/footer.html %>
-</body>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <div class="col-sm-6">
+                    <h3>Pagina en mantenimiento</h3>
+                    <p>serviciovupe@gmail.com</p>
+                </div>
+                </div>
+                </div>
+                <% include partials/footer.html %>
+          </body>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="js/main.js" charset="utf-8"></script>
-
+    <script src="js/main.js" charset="utf-8"></script>
 </html>
